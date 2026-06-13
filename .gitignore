@@ -21,7 +21,8 @@ checkpoints/*.pth
 # Data
 data/
 datasets/
-vis/
+/vis/
 
 # Large figure sources (PNG previews are kept for README)
 assets/figs/*.pdf
+vis_saliency.pdf
