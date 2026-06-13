@@ -7,11 +7,6 @@
 </p>
 
 <p align="center">
-  Official PyTorch implementation of <a href="https://openaccess.thecvf.com/content/CVPR2025/papers/Sun_SET_Spectral_Enhancement_for_Tiny_Object_Detection_CVPR_2025_paper.pdf">SET</a>,
-  built on <a href="https://github.com/open-mmlab/mmdetection">MMDetection</a> 2.23.
-</p>
-
-<p align="center">
   This repository highlights two deliverables: the core SET training and evaluation code, and two visualization tools that mirror the HBS and API modules in the paper.
 </p>
 
