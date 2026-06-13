@@ -1,0 +1,27 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+dist/
+build/
+
+# Training outputs
+output/
+work_dirs/
+*.log
+
+# Checkpoints (large files; use checkpoints/README or release assets)
+checkpoints/*.pth
+
+# IDE
+.idea/
+.vscode/
+*.swp
+
+# Data
+data/
+datasets/
+vis/
+
+# Large figure sources (PNG previews are kept for README)
+assets/figs/*.pdf

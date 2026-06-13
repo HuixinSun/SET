@@ -1,0 +1,2 @@
+include aitodpycocotools/aitodpycocotools/*.pyx
+include lvis/requirements.txt
