@@ -7,7 +7,9 @@
 </p>
 
 <p align="center">
-  This repository highlights two deliverables: the core SET training and evaluation code, and two visualization tools that mirror the HBS and API modules in the paper.
+  Tiny objects become less distinct after feature encoding and are easily overwhelmed by high-frequency background noise.
+  SET (CVPR 2025) addresses this from a frequency spectrum perspective, amplifying tiny object signatures through HBS and API during training with no extra cost at inference.
+  This repository releases the core FCOS training and evaluation code on AI-TOD, together with two visualization tools that mirror the HBS and API modules in the paper.
 </p>
 
 <p align="center">
@@ -19,17 +21,17 @@
   <a href="run_saliency.sh"><img src="https://img.shields.io/badge/Visualization-API_(Fig._5)-ea580c?style=flat-square" alt="API Visualization"/></a>
 </p>
 
-<p align="center">
-  <img src="assets/figs/motivation_p2.png" width="720"/>
-  <br/>
-  <em>SET overview. HBS suppresses high-frequency noise in the background through adaptive smoothing; API increases feature saliency in critical regions via adversarial perturbations during training.</em>
-</p>
-
 ## Why SET?
 
 - Suppresses high-frequency noise in the background through adaptive smoothing operations (HBS)
 - Leverages adversarial perturbations to increase feature saliency in critical regions and prompt the refinement of object features during training (API)
 - Applied during training only, with no extra burden at inference
+
+<p align="center">
+  <img src="assets/figs/motivation_p2.png" width="720"/>
+  <br/>
+  <em>SET overview. HBS suppresses high-frequency noise in the background through adaptive smoothing; API increases feature saliency in critical regions via adversarial perturbations during training.</em>
+</p>
 
 ## Environment
 
