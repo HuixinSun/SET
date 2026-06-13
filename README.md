@@ -6,11 +6,11 @@
   <a href="https://openaccess.thecvf.com/content/CVPR2025/papers/Sun_SET_Spectral_Enhancement_for_Tiny_Object_Detection_CVPR_2025_paper.pdf"><img src="https://img.shields.io/badge/Paper-PDF-red.svg" alt="Paper"/></a>
 </p>
 
-<p align="center">
-  Tiny objects become less distinct after feature encoding and are easily overwhelmed by high-frequency background noise.
-  SET (CVPR 2025) addresses this from a frequency spectrum perspective, amplifying tiny object signatures through HBS and API during training with no extra cost at inference.
-  This repository releases the core FCOS training and evaluation code on AI-TOD, together with two visualization tools that mirror the HBS and API modules in the paper.
-</p>
+Tiny objects become less distinct after feature encoding and are easily overwhelmed by high-frequency background noise.
+
+SET (CVPR 2025) addresses this from a frequency spectrum perspective, amplifying tiny object signatures through HBS and API during training with no extra cost at inference.
+
+This repository releases the core FCOS training and evaluation code on AI-TOD, together with two visualization tools that mirror the HBS and API modules in the paper.
 
 <p align="center">
   <a href="mmdet/models/detectors/fcos_set.py"><img src="https://img.shields.io/badge/Core_Code-FCOS_w/_SET-2563eb?style=flat-square" alt="Core Code"/></a>
