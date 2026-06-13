@@ -28,7 +28,7 @@
 - Applied during training only, with no extra burden at inference
 
 <p align="center">
-  <img src="assets/figs/motivation_p2.png" width="720"/>
+  <img src="assets/figs/motivation_p2.png" width="560"/>
   <br/>
   <em>SET overview. HBS suppresses high-frequency noise in the background through adaptive smoothing; API increases feature saliency in critical regions via adversarial perturbations during training.</em>
 </p>
