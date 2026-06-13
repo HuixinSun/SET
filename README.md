@@ -6,8 +6,6 @@
   <a href="https://openaccess.thecvf.com/content/CVPR2025/papers/Sun_SET_Spectral_Enhancement_for_Tiny_Object_Detection_CVPR_2025_paper.pdf"><img src="https://img.shields.io/badge/Paper-PDF-red.svg" alt="Paper"/></a>
 </p>
 
-This repository releases the core training and evaluation code on AI-TOD, together with two visualization tools that mirror the HBS and API modules in the paper.
-
 <p align="center">
   <a href="mmdet/models/detectors/fcos_set.py"><img src="https://img.shields.io/badge/Core_Code-FCOS_w/_SET-2563eb?style=flat-square" alt="Core Code"/></a>
   <a href="configs/aitod/"><img src="https://img.shields.io/badge/Configs-AI--TOD-64748b?style=flat-square" alt="Configs"/></a>
@@ -16,6 +14,8 @@ This repository releases the core training and evaluation code on AI-TOD, togeth
   <a href="run_pca.sh"><img src="https://img.shields.io/badge/Visualization-HBS_(Fig._4)-16a34a?style=flat-square" alt="HBS Visualization"/></a>
   <a href="run_saliency.sh"><img src="https://img.shields.io/badge/Visualization-API_(Fig._5)-ea580c?style=flat-square" alt="API Visualization"/></a>
 </p>
+
+This repository releases the core training and evaluation code on AI-TOD, together with two visualization tools that mirror the HBS and API modules in the paper.
 
 ## Why SET?
 
