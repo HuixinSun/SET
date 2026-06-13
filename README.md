@@ -15,7 +15,7 @@
   <a href="run_saliency.sh"><img src="https://img.shields.io/badge/Visualization-API_(Fig._5)-ea580c?style=flat-square" alt="API Visualization"/></a>
 </p>
 
-This repository releases the core training and evaluation code on AI-TOD, together with two visualization tools that mirror the HBS and API modules in the paper.
+This repository releases the core training and evaluation code of SET (CVPR 2025), together with two visualization tools that mirror the HBS and API modules in the paper.
 
 ## Why SET?
 
@@ -44,28 +44,44 @@ cd cocoapi-aitod-master/aitodpycocotools && pip install -v -e .
 
 Download [AI-TOD](https://github.com/jwwangchn/AI-TOD) to `data/aitod/`.
 
-## Training & Evaluation
+## Training
+
+Configs for AI-TOD are under [`configs/aitod/`](configs/aitod/):
+
+| Config | Model |
+|--------|-------|
+| [`fcos_r50_baseline.py`](configs/aitod/fcos_r50_baseline.py) | FCOS baseline |
+| [`fcos_r50_set.py`](configs/aitod/fcos_r50_set.py) | FCOS w/ SET |
+
+Use [`scripts/train.sh`](scripts/train.sh) with `CONFIG`, number of `GPUS`, and `WORK_DIR`:
 
 ```bash
-# Train
 bash scripts/train.sh configs/aitod/fcos_r50_baseline.py 4 output/fcos_baseline
 bash scripts/train.sh configs/aitod/fcos_r50_set.py 4 output/fcos_set
+```
 
-# Eval
+## Evaluation
+
+Use [`scripts/eval.sh`](scripts/eval.sh) with `CONFIG`, `CHECKPOINT`, and number of `GPUS`:
+
+```bash
 bash scripts/eval.sh configs/aitod/fcos_r50_baseline.py checkpoints/aitod_fcos_r50_baseline_epoch12.pth 1
 bash scripts/eval.sh configs/aitod/fcos_r50_set.py checkpoints/aitod_fcos_set_epoch12.pth 1
 ```
 
-## Results on AI-TOD (Table 1)
+Pretrained checkpoints are provided in [`checkpoints/`](checkpoints/):
 
-ResNet-50, 800×800, 12 epochs, trainval to test.
+| Model | Checkpoint | Config |
+|-------|------------|--------|
+| FCOS baseline | `aitod_fcos_r50_baseline_epoch12.pth` | `configs/aitod/fcos_r50_baseline.py` |
+| FCOS w/ SET | `aitod_fcos_set_epoch12.pth` | `configs/aitod/fcos_r50_set.py` |
+
+Results on AI-TOD (Table 1 in the paper). ResNet-50, 800×800, 12 epochs, trainval to test:
 
 | Method | AP | AP50 | AP75 | APvt | APt | APs |
 |--------|-----|------|------|------|-----|-----|
 | FCOS | 12.0 | 29.0 | 8.0 | 2.5 | 11.9 | 17.1 |
 | FCOS w/ SET | 14.2 | 34.9 | 9.8 | 2.9 | 13.0 | 20.2 |
-
-Pretrained checkpoints: [`checkpoints/`](checkpoints/)
 
 ## Visualization
 
