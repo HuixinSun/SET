@@ -64,7 +64,7 @@ bash scripts/eval.sh configs/aitod/fcos_r50_baseline.py checkpoints/aitod_fcos_r
 bash scripts/eval.sh configs/aitod/fcos_r50_set.py checkpoints/aitod_fcos_set_epoch12.pth 1
 ```
 
-Pretrained checkpoints are available in [`checkpoints/`](checkpoints/):
+Trained checkpoints are available in [`checkpoints/`](checkpoints/):
 
 | Model | Checkpoint | Config |
 |-------|------------|--------|
