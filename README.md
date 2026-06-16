@@ -10,7 +10,7 @@
   <a href="mmdet/models/detectors/fcos_set.py"><img src="https://img.shields.io/badge/Core_Code-FCOS_w/_SET-2563eb?style=flat-square" alt="Core Code"/></a><a href="configs/aitod/"><img src="https://img.shields.io/badge/Configs-AI--TOD-64748b?style=flat-square" alt="Configs"/></a><a href="checkpoints/"><img src="https://img.shields.io/badge/Checkpoints-Released-9333ea?style=flat-square" alt="Checkpoints"/></a><a href="run_pca.sh"><img src="https://img.shields.io/badge/Visualization-HBS_(Fig._4)-16a34a?style=flat-square" alt="HBS Visualization"/></a><a href="run_saliency.sh"><img src="https://img.shields.io/badge/Visualization-API_(Fig._5)-ea580c?style=flat-square" alt="API Visualization"/></a>
 </p>
 
-This repository releases the core training and evaluation code of SET (CVPR 2025), together with two visualization tools that mirror the HBS and API modules in the paper.
+This repository releases the core training and evaluation code of SET (CVPR 2025), together with two visualization tools for the HBS and API modules in the paper.
 
 ## Why SET?
 
@@ -64,7 +64,7 @@ bash scripts/eval.sh configs/aitod/fcos_r50_baseline.py checkpoints/aitod_fcos_r
 bash scripts/eval.sh configs/aitod/fcos_r50_set.py checkpoints/aitod_fcos_set_epoch12.pth 1
 ```
 
-Pretrained checkpoints are provided in [`checkpoints/`](checkpoints/):
+Pretrained checkpoints are available in [`checkpoints/`](checkpoints/):
 
 | Model | Checkpoint | Config |
 |-------|------------|--------|
@@ -80,7 +80,7 @@ Results on AI-TOD (Table 1 in the paper). ResNet-50, 800×800, 12 epochs, trainv
 
 ## Visualization
 
-The two visualization tools directly mirror the two core modules:
+Each tool visualizes one of the two core modules:
 
 | Module | Role | Tool |
 |--------|------|------|
