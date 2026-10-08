@@ -2,12 +2,10 @@
 
 <p align="center" style="font-size: 1.05em">
   Huixin Sun, Runqi Wang, Yanjing Li, Linlin Yang, Shaohui Lin, Xianbin Cao, Baochang Zhang<br/>
-  <a href="https://openaccess.thecvf.com/content/CVPR2025/papers/Sun_SET_Spectral_Enhancement_for_Tiny_Object_Detection_CVPR_2025_paper.pdf"><img src="https://img.shields.io/badge/CVPR-2025-blue.svg" alt="CVPR 2025"/></a>
-  <a href="https://openaccess.thecvf.com/content/CVPR2025/papers/Sun_SET_Spectral_Enhancement_for_Tiny_Object_Detection_CVPR_2025_paper.pdf"><img src="https://img.shields.io/badge/Paper-PDF-red.svg" alt="Paper"/></a>
-</p>
-
-<p align="center" style="line-height: 1.1; margin: 0.2em 0;">
-  <a href="mmdet/models/detectors/fcos_set.py"><img src="https://img.shields.io/badge/Core_Code-FCOS_w/_SET-2563eb?style=flat-square" alt="Core Code"/></a><a href="configs/aitod/"><img src="https://img.shields.io/badge/Configs-AI--TOD-64748b?style=flat-square" alt="Configs"/></a><a href="checkpoints/"><img src="https://img.shields.io/badge/Checkpoints-Released-9333ea?style=flat-square" alt="Checkpoints"/></a><a href="run_pca.sh"><img src="https://img.shields.io/badge/Visualization-HBS_(Fig._4)-16a34a?style=flat-square" alt="HBS Visualization"/></a><a href="run_saliency.sh"><img src="https://img.shields.io/badge/Visualization-API_(Fig._5)-ea580c?style=flat-square" alt="API Visualization"/></a>
+  <a href="https://openaccess.thecvf.com/content/CVPR2025/papers/Sun_SET_Spectral_Enhancement_for_Tiny_Object_Detection_CVPR_2025_paper.pdf"><img src="https://img.shields.io/badge/CVPR-2025-blue.svg?style=flat-square" alt="CVPR 2025"/></a>
+  <a href="https://openaccess.thecvf.com/content/CVPR2025/papers/Sun_SET_Spectral_Enhancement_for_Tiny_Object_Detection_CVPR_2025_paper.pdf"><img src="https://img.shields.io/badge/Paper-PDF-red.svg?style=flat-square" alt="Paper"/></a>
+  <a href="mmdet/models/detectors/fcos_set.py"><img src="https://img.shields.io/badge/Core_Code-FCOS_w/_SET-2563eb?style=flat-square" alt="Core Code"/></a>
+  <a href="checkpoints/"><img src="https://img.shields.io/badge/Checkpoints-Released-9333ea?style=flat-square" alt="Checkpoints"/></a>
 </p>
 
 This repository releases the core training and evaluation code of SET (CVPR 2025), together with two visualization tools for the HBS and API modules in the paper.
