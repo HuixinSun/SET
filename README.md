@@ -61,7 +61,7 @@ Use [`scripts/eval.sh`](scripts/eval.sh) with `CONFIG`, `CHECKPOINT`, and number
 
 ```bash
 bash scripts/eval.sh configs/aitod/fcos_r50_baseline.py checkpoints/aitod_fcos_r50_baseline_epoch12.pth 1
-bash scripts/eval.sh configs/aitod/fcos_r50_set.py checkpoints/aitod_fcos_set_epoch12.pth 1
+bash scripts/eval.sh configs/aitod/fcos_r50_set.py checkpoints/AI-TOD_FCOS_R50_SET_epoch_12.pth 1
 ```
 
 Trained checkpoints are available in [`checkpoints/`](checkpoints/):
@@ -69,7 +69,7 @@ Trained checkpoints are available in [`checkpoints/`](checkpoints/):
 | Model | Checkpoint | Config |
 |-------|------------|--------|
 | FCOS baseline | `aitod_fcos_r50_baseline_epoch12.pth` | `configs/aitod/fcos_r50_baseline.py` |
-| FCOS w/ SET | `aitod_fcos_set_epoch12.pth` | `configs/aitod/fcos_r50_set.py` |
+| FCOS w/ SET | `AI-TOD_FCOS_R50_SET_epoch_12.pth` | `configs/aitod/fcos_r50_set.py` |
 
 Results on AI-TOD (Table 1 in the paper). ResNet-50, 800×800, 12 epochs, trainval to test:
 
