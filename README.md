@@ -5,7 +5,7 @@
   <a href="https://openaccess.thecvf.com/content/CVPR2025/papers/Sun_SET_Spectral_Enhancement_for_Tiny_Object_Detection_CVPR_2025_paper.pdf"><img src="https://img.shields.io/badge/CVPR-2025-blue.svg?style=flat-square" alt="CVPR 2025"/></a>
   <a href="https://openaccess.thecvf.com/content/CVPR2025/papers/Sun_SET_Spectral_Enhancement_for_Tiny_Object_Detection_CVPR_2025_paper.pdf"><img src="https://img.shields.io/badge/Paper-PDF-red.svg?style=flat-square" alt="Paper"/></a>
   <a href="mmdet/models/detectors/fcos_set.py"><img src="https://img.shields.io/badge/Core_Code-FCOS_w/_SET-2563eb?style=flat-square" alt="Core Code"/></a>
-  <a href="checkpoints/"><img src="https://img.shields.io/badge/Checkpoints-Released-9333ea?style=flat-square" alt="Checkpoints"/></a>
+  <a href="configs/aitod/"><img src="https://img.shields.io/badge/Configs-AI--TOD-9333ea?style=flat-square" alt="Configs"/></a>
 </p>
 
 This repository releases the core training and evaluation code of SET (CVPR 2025), together with two visualization tools for the HBS and API modules in the paper.
@@ -58,16 +58,9 @@ bash scripts/train.sh configs/aitod/fcos_r50_set.py 4 output/fcos_set
 Use [`scripts/eval.sh`](scripts/eval.sh) with `CONFIG`, `CHECKPOINT`, and number of `GPUS`:
 
 ```bash
-bash scripts/eval.sh configs/aitod/fcos_r50_baseline.py checkpoints/aitod_fcos_r50_baseline_epoch12.pth 1
-bash scripts/eval.sh configs/aitod/fcos_r50_set.py checkpoints/AI-TOD_FCOS_R50_SET_epoch_12.pth 1
+bash scripts/eval.sh configs/aitod/fcos_r50_baseline.py <CHECKPOINT> 1
+bash scripts/eval.sh configs/aitod/fcos_r50_set.py <CHECKPOINT> 1
 ```
-
-Trained checkpoints are available in [`checkpoints/`](checkpoints/):
-
-| Model | Checkpoint | Config |
-|-------|------------|--------|
-| FCOS baseline | `aitod_fcos_r50_baseline_epoch12.pth` | `configs/aitod/fcos_r50_baseline.py` |
-| FCOS w/ SET | `AI-TOD_FCOS_R50_SET_epoch_12.pth` | `configs/aitod/fcos_r50_set.py` |
 
 Results on AI-TOD (Table 1 in the paper). ResNet-50, 800×800, 12 epochs, trainval to test:
 
